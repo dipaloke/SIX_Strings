@@ -5,9 +5,122 @@
     <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <title>SIX Strings</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/44c1d3cc4e.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
-
+    <div class="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img id="header-img" src="/images/logo.png" alt="six-string logo">
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li>
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section id="hero">
+        <h2>SIX Strings Guitars: Where Quality Meets Affordability</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input name="name" id="name" type="text" placeholder="Enter your name">
+          <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+          <input id="submit" type="submit" value="Book Your Guitar" class="btn">
+        </form>
+      </section>
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-fire"></i>
+            </div>
+            <div class="desc">
+              <h2>Premium Materials</h2>
+              <p>
+                At SIX Strings, we only use the highest quality premium materials for our guitars, including hand-selected woods, premium hardware, and expert craftsmanship. Our commitment to quality ensures that you'll get a guitar that not only looks stunning, but also delivers exceptional tone and playability.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-truck"></i>
+            </div>
+            <div class="desc">
+              <h2>Lightning-fast Shipping</h2>
+              <p>
+                Order from SIX Strings and experience lightning-fast shipping, with most orders shipped within 24 hours. Our efficient shipping process ensures that you'll get your new guitar delivered to your door in no time, ready to play and enjoy
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Quality Assurence</h2>
+              <p>
+                At SIX Strings, we take pride in delivering guitars of exceptional quality. Our guitars undergo rigorous quality checks, including thorough inspections by our experienced luthiers, to ensure that every guitar meets our high standards of craftsmanship and sound.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works">
+          <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+          <div class="product" id="acoustic">
+            <div class="level">Acoustic Guitar</div>
+            <h2>$300-$5000</h2>
+            <ol>
+              <li>Bright, natural sound</li>
+              <li>Versatile for various genres</li>
+              <li>Portable and easy to travel</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="electric">
+            <div class="level">Electric Guitar</div>
+            <h2>$1500-$5000</h2>
+            <ol>
+              <li>Wide range of sound options</li>
+              <li>Playability and speed</li>
+              <li>Distortion and effects control</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="classical">
+            <div class="level">Classical Guitar</div>
+            <h2>$1000-$4500</h2>
+            <ol>
+              <li>Warm and mellow tone</li>
+              <li>Fingerpicking and classical techniques</li>
+              <li>Beautiful craftsmanship and aesthetics</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+            <li>
+              <a href="#">Terms</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <span>Copyright 2023, SIX Strings</span>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
