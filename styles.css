@@ -25,6 +25,7 @@ header {
     overflow: hidden;
     width: 100%;
 }
+
 @media (max-width: 600px) {
     header {
         flex-wrap: wrap;
@@ -33,9 +34,11 @@ header {
         width: 60vw;
     }
 }
+
 .logo {
     width: 60vh;
 }
+
 
 @media (max-width: 650px) {
     .logo {
@@ -44,6 +47,7 @@ header {
         position: relative;
     }
 }
+
 .logo > img {
     width: 100%;
     height: 100%;
@@ -55,15 +59,43 @@ header {
     margin-left: 20px;
 }
 
+@media (max-width: 650px) {
+    .logo > img {
+        margin: 0 auto;
+    }
+}
+
 nav {
     font-weight: bolder;
 }
+@media (max-width: 650px) {
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;
+    }
+    nav > li {
+        padding-bottom: 5px;
+    }
+}
+
 nav > ul {
     width: 35vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
+@media (max-width: 650px) {
+    nav > ul {
+        flex-direction: column;
+    }
+}
+
 li {
     list-style: none;
 }
@@ -78,22 +110,29 @@ a {
     justify-content: center;
     text-align: center;
     height: 200px;
-    margin-top: 120px;
+    margin-top: 130px;
 }
 #hero > h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     word-wrap: break-word;
+    font-size: 2rem;
 }
 #hero input[type='email'] {
     max-width: 300px;
     width: 100%;
     padding: 5px;
+    height: 40px;
+    text-align: center;
+    margin: 10px;
 }
 #hero input[type='text'] {
     margin-bottom: 10px;
     max-width: 300px;
     width: 100%;
     padding: 5px;
+    height: 40px;
+    text-align: center;
+    margin: 10px;
 }
 #hero input[type='submit'] {
     max-width: 200px;
@@ -108,6 +147,16 @@ a {
     font-weight: bolder;
     font-size: 16px;
 }
+#hero input[type='submit']:hover {
+    background-color: #FE1534;
+    transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+    #hero {
+        margin-top: 250px;
+    }
+}
 .btn {
     padding: 0 20px;
     font-size: 1em;
@@ -116,6 +165,7 @@ a {
     border-radius: 5px;
     background: transparent;
     cursor: pointer;
+    height: 40px;
 }
 .container {
     max-width: 1000px;
@@ -123,7 +173,13 @@ a {
     margin: 0 auto;
 }
 #features {
-    margin-top: 30px;
+    margin-top: 50px;
+}
+
+@media (max-width: 650px) {
+    #features {
+        margin-top: 30px;
+    }
 }
 .grid {
     display: flex;
@@ -135,6 +191,114 @@ a {
     width: 20vw;
     color: #FE1534;
 }
-.fa {
-    font-weight: 900;
+
+@media (max-width: 650px) {
+    #features .icon {
+        display: none;
+    }
+}
+#features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130px;
+    width: 80vw;
+    padding: 6px;
+}
+
+@media (max-width: 650px) {
+    #features .desc {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 160px;
+    }
+}
+#how-it-works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#how-it-works > iframe {
+    max-width: 570px;
+    width: 100%;
+}
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+.product > .level {
+    background-color: #ddd;
+    color: #AC1C2F;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.product > h2 {
+    margin-top: 20px;
+}
+
+.product > ol {
+    margin: 15px 0;
+}
+.product > ol > li {
+    padding: 5px 0;
+}
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #AC1C2F;
+    font-weight: 500;
+}
+.product > button:hover {
+    background-color: #FE1534;
+    transition: background-color 1s;
+}
+
+@media (max-width: 750px) {
+    #pricing {
+        flex-direction: column;
+    }
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #FEFEFE;
+    padding: 25px;
+}
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+footer > ul > li {
+    padding: 0 10px;
+}
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #AC1C2F;
 }
